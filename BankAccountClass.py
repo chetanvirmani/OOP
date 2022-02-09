@@ -20,6 +20,7 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
+        amount = abs(amount)
         if self.__balance >= amount:
             self.__balance -= amount
         else:

@@ -11,7 +11,7 @@ class Coin:
 
 #Init method initializes
     def __init__(self):
-        self.sideup = 'Heads'
+        self.__sideup = 'Heads'
     #sideup is something that we came
     #up with
     #All our coins are starting with the head
@@ -26,16 +26,16 @@ class Coin:
 
     def toss(self):
         if random.randint(0, 1) == 0:
-            self.sideup = 'Heads'
+            self.__sideup = 'Heads'
     # Randomly picking between 0 and 1
         else:
-            self.sideup = 'Tails'
+            self.__sideup = 'Tails' #Adding two underscores will make the attribute hidden (unchangable outside of the class file)
 
     # The get_sideup method returns the value
     # referenced by sideup.
 
     def get_sideup(self):
-            return self.sideup
+            return self.__sideup
 
     #sideup is the name that we came up with
     
