@@ -6,14 +6,11 @@ class CellPhone:
         self.__model = model
         self.__retail_price = price
     
-    def set_manufact(self,manu):
-        self.__manufact = manu
+    def get_manufact(self):
         return self.__manufact
 
-    def set_model(self,model):
-        self.__model = model
+    def get_model(self):
         return self.__model
 
-    def set_retail_price(self, price):
-        self.__retail_price = price
+    def get_retail_price(self):
         return self.__retail_price

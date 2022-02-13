@@ -8,8 +8,8 @@ def main ():
 
     cellInfo = c.CellPhone(manuName,model,price)
 
-    print(cellInfo.set_manufact(manuName))
-    print(cellInfo.set_model(model))
-    print(cellInfo.set_retail_price(price))
+    print(cellInfo.get_manufact())
+    print(cellInfo.get_model())
+    print(cellInfo.get_retail_price())
 
 main()
