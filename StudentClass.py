@@ -12,7 +12,7 @@ class student:
         self.__registration = 0
 
     def studentAge(self):
-        self.__age = date.today().year - self.__DateOfBirth.year - 1
+        self.__age = date.today().year - self.__DateOfBirth.year - 1 #-1 is used because ".year" automatically rounds up the result
     
     def registerationPeriod(self):
 

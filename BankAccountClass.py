@@ -13,7 +13,7 @@ class BankAccount:
       # The deposit method makes a deposit into the
       # account.
 
-    def deposit(self, amount):
+    def deposit(self, amount): #mutator methods (set methods) are the ones that need additional arguments to "Change/Mutate" stuff
         self.__balance += amount
 
       # The withdraw method withdraws an amount
